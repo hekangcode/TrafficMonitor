@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_item_app"
+        android:layout_width="@dimen/px1200"
+        android:layout_height="@dimen/px110"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_app_icon"
+            android:layout_width="@dimen/px72"
+            android:layout_height="@dimen/px72"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/px16"
+            android:layout_marginStart="@dimen/px32"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="@dimen/px400"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_app_icon"
+            android:singleLine="true"
+            android:text="小米商城"
+            android:textColor="@color/color_CCFFFFFF"
+            android:textSize="@dimen/fontsize_34"
+            />
+
+        <ImageView
+            android:id="@+id/iv_received_icon"
+            android:layout_width="@dimen/px36"
+            android:layout_height="@dimen/px36"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/px10"
+            android:layout_toStartOf="@+id/tv_app_received"
+            android:src="@mipmap/com_can_trafficmonitor_icon_received"/>
+
+        <TextView
+            android:id="@+id/tv_app_received"
+            android:layout_width="@dimen/px220"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/iv_transmitted_icon"
+            android:singleLine="true"
+            android:textColor="@color/color_CCFFFFFF"
+            android:textSize="@dimen/fontsize_28"/>
+
+        <ImageView
+            android:id="@+id/iv_transmitted_icon"
+            android:layout_width="@dimen/px36"
+            android:layout_height="@dimen/px36"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/px10"
+            android:layout_marginStart="@dimen/px20"
+            android:layout_toStartOf="@+id/tv_app_transmitted"
+            android:src="@mipmap/com_can_trafficmonitor_icon_transmitted"/>
+
+        <TextView
+            android:id="@+id/tv_app_transmitted"
+            android:layout_width="@dimen/px220"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/px32"
+            android:singleLine="true"
+            android:textColor="@color/color_CCFFFFFF"
+            android:textSize="@dimen/fontsize_28"
+            />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/px32"
+            android:layout_marginStart="@dimen/px32"
+            android:background="@mipmap/com_can_trafficmonitor_icon_line"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="@dimen/px180"
+        android:layout_height="@dimen/px80"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/px24"
+        android:background="@drawable/com_can_trafficmonitor_rect_gray"
+        android:focusable="true"
+        android:text="@string/app_stop_run"
+        android:textColor="@color/color_CCFFFFFF"
+        android:textSize="@dimen/fontsize_34"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

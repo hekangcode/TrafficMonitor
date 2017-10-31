@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TrafficMonitor</string>
+    <string name="traffic_title">流量统计</string>
+    <string name="received_speed">下载：0.0KB/S</string>
+    <string name="transmitted_speed">上传：0.0KB/S</string>
+    <string name="received">下载：</string>
+    <string name="transmitted">上传：</string>
+    <string name="unit_second">/S</string>
+    <string name="not_support_devices">该设备不支持统计哦~</string>
+    <string name="no_traffic_app">暂无统计数据</string>
+    <string name="format_text_style">##.##</string>
+    <string name="format_unit_byte">B</string>
+    <string name="format_unit_k">KB</string>
+    <string name="format_unit_m">MB</string>
+    <string name="format_unit_g">GB</string>
+    <string name="format_beyond_scope">超出统计范围</string>
+    <string name="app_stop_run">停止运行</string>
+    <string name="stop_app">，已停止</string>
+    <string name="no_super_permission">您未取得超级权限，无法禁止该应用</string>
+</resources>
